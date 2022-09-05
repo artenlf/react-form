@@ -12,7 +12,7 @@ function FormularioCadastro({ aoEnviar, validarCPF }) {
     <DadosDeEntrega aoEnviar={aoEnviar} />,
   ];
 
-  function proximaEtapa() {
+  function proximaEtapa(dados) {
     setEtapaAtual(etapaAtual + 1);
   }
 
