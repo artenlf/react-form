@@ -33,3 +33,7 @@ Aula 9 e 10: criamos a validação para o campo CPF e tratamento de erros, utili
 curso de react hooks:
 
 Aula 11, 12 e 13: no curso de hooks vamos trabalhar com multiplos formulários com campos sequenciais para o usuário ir preenchendo as informações aos poucos. Nas aulas 11, 12 e 13, povoamos o formulário com os campos que devem ser preenchidos pelo usuário. Nas próximas aulas, iremos criar o fluxo de preenchimento, separando cada formulário.
+
+Aula 14: criamos uma função com switch para podermos alternar entre os formulários. A função teve que ficar dentro do componente, pois havia um conflito de escopo nos parâmetros da nossa função componente.
+
+Dica: o método switch não é nativo do react, por isso precisamos utilizar uma função JavaScript para poder utilizá-lo.
