@@ -1,5 +1,7 @@
 # react-form
 
+curso de react function components:
+
 Aula 1: trabalhamos com o projeto inicial mudando a abordagem de class components para function components, uma abordagem mais moderna do react. Fizemos a estrutura básica do nosso formulário utilizando essa metodologia.
 
 Aula 2: implementamos a estilização de Material Design no nosso formulário, utilizando a bilbioteca MUI, conforme a documentação fornecida para implementação de API.
@@ -25,3 +27,9 @@ Aula 8: criamos a função aoEnviarForm no App.js e chamamos ela na propriedade 
 Dica: Ao recebermos propriedades dentro de um function component do React, elas ficam salvas em um objeto que é o primeiro parâmetro passado para essa função. Essa técnica é chamada de desconstrução de objetos e podemos fazer ela com Arrays também.
 
 Aula 9 e 10: criamos a validação para o campo CPF e tratamento de erros, utilizando propriedades do Material UI. Deixando a função de validação fora do formulário, podemos alterar as validações dependendo da parte do projeto que estamos trabalhando o que torna esse componente mais reutilizável.
+
+--
+
+curso de react hooks:
+
+Aula 11, 12 e 13: no curso de hooks vamos trabalhar com multiplos formulários com campos sequenciais para o usuário ir preenchendo as informações aos poucos. Nas aulas 11, 12 e 13, povoamos o formulário com os campos que devem ser preenchidos pelo usuário. Nas próximas aulas, iremos criar o fluxo de preenchimento, separando cada formulário.
