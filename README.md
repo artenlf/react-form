@@ -19,3 +19,5 @@ Aula 6: Regras dos hooks:
 link: https://pt-br.reactjs.org/docs/hooks-rules.html
 
 Aula 7: finalizando o form, aplicando funções para os campos.
+
+Aula 8: criamos a função aoEnviarForm no App.js e chamamos ela na propriedade aoEnviar no bloco de renderização. No nosso FormularioCadastro, ao invés de passarmos props como parâmetros, utilizamos a propriedade aoEnviar como um parâmetro entre {}, passando as propriedades no evento de onSubmit, na linha 15.
