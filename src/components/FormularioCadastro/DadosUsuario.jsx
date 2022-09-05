@@ -1,15 +1,20 @@
 import { Button, TextField } from "@mui/material";
 import React from "react";
 
-function DadosUsuario() {
+function DadosUsuario({ aoEnviar }) {
   return (
-    <>
-      <TextField id="email" label="email" type="email" margin="normal" fullWidth />
-      <TextField id="senha" label="senha" type="password" margin="normal" fullWidth />
+    <form
+      onSubmit={(event) => {
+        event.preventDefault();
+        aoEnviar();
+      }}
+    >
+      <TextField id="email" label="email" type="email" required margin="normal" fullWidth />
+      <TextField id="senha" label="senha" type="password" required margin="normal" fullWidth />
       <Button type="submit" variant="contained">
         Login
       </Button>
-    </>
+    </form>
   );
 }
 
