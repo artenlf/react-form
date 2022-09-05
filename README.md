@@ -34,6 +34,16 @@ curso de react hooks:
 
 Aula 11, 12 e 13: no curso de hooks vamos trabalhar com multiplos formulários com campos sequenciais para o usuário ir preenchendo as informações aos poucos. Nas aulas 11, 12 e 13, povoamos o formulário com os campos que devem ser preenchidos pelo usuário. Nas próximas aulas, iremos criar o fluxo de preenchimento, separando cada formulário.
 
-Aula 14: criamos uma função com switch para podermos alternar entre os formulários. A função teve que ficar dentro do componente, pois havia um conflito de escopo nos parâmetros da nossa função componente.
+Aula 14: criamos uma função com switch para podermos alternar entre os formulários, o que também é chamado tecnicamente de Renderização Condicional. A função teve que ficar dentro do componente, pois havia um conflito de escopo nos parâmetros da nossa função componente.
 
-Dica: o método switch não é nativo do react, por isso precisamos utilizar uma função JavaScript para poder utilizá-lo.
+Dica: o método switch não é nativo do react, por isso precisamos utilizar uma função JavaScript para poder utilizá-lo. Em outras palavras: como o JSX não possui todas as funcionalidades do JavaScript, conseguimos fazer Renderização Condicional chamando uma função a partir do JSX.
+
+Há alguns pré-requisitos para que possamos executar uma função dentro do JSX:
+
+1.A função deve ser executada de imediato (formularioAtual()), pois se você não executar a função, o React entende que você tá querendo renderizar uma variável e não o retorno dessa função, por isso, não funcionará.
+
+2. A função deve retornar alguma coisa, normalmente se retorna uma string ou um outro JSX.
+
+3. Caso esteja usando alguma variável que está no escopo do componente, a função deve estar dentro do próprio componente ou ser passada para a função via parâmetro.
+
+Aula 15: alteramos o comportamento do método/parâmetro "aoEnviar", fazendo uma injeção de dependências a fim de fazer com que o comportamento dele no caso do "onSubmit" seja de passar para o próximo formulário, ao executar a função "proximaEtapa". Ao final, o "aoEnviar" irá ter o comportamento que tinha anteriormente, enviando todos os dados, conforme as propriedades que ele recebe da função aoEnviarForm. Além disso, adicionamos o atributo "required" aos nossos campos de formulários.
