@@ -21,3 +21,7 @@ link: https://pt-br.reactjs.org/docs/hooks-rules.html
 Aula 7: finalizando o form, aplicando funções para os campos.
 
 Aula 8: criamos a função aoEnviarForm no App.js e chamamos ela na propriedade aoEnviar no bloco de renderização. No nosso FormularioCadastro, ao invés de passarmos props como parâmetros, utilizamos a propriedade aoEnviar como um parâmetro entre {}, passando as propriedades no evento de onSubmit, na linha 15.
+
+Dica: Ao recebermos propriedades dentro de um function component do React, elas ficam salvas em um objeto que é o primeiro parâmetro passado para essa função. Essa técnica é chamada de desconstrução de objetos e podemos fazer ela com Arrays também.
+
+Aula 9 e 10: criamos a validação para o campo CPF e tratamento de erros, utilizando propriedades do Material UI. Deixando a função de validação fora do formulário, podemos alterar as validações dependendo da parte do projeto que estamos trabalhando o que torna esse componente mais reutilizável.
