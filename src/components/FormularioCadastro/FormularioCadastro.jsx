@@ -1,18 +1,28 @@
 import React, { useState } from "react";
+import { useEffect } from "react";
 import DadosDeEntrega from "./DadosDeEntrega";
 import DadosPessoais from "./DadosPessoais";
 import DadosUsuario from "./DadosUsuario";
 
 function FormularioCadastro({ aoEnviar, validarCPF }) {
   const [etapaAtual, setEtapaAtual] = useState(0);
+  const [dadosColetados, setDados] = useState({});
+  useEffect(() => {
+    console.log(dadosColetados);
+  });
 
   const formularios = [
-    <DadosUsuario aoEnviar={proximaEtapa} />,
-    <DadosPessoais aoEnviar={proximaEtapa} validarCPF={validarCPF} />,
-    <DadosDeEntrega aoEnviar={aoEnviar} />,
+    <DadosUsuario aoEnviar={coletarDados} />,
+    <DadosPessoais aoEnviar={coletarDados} validarCPF={validarCPF} />,
+    <DadosDeEntrega aoEnviar={coletarDados} />,
   ];
 
-  function proximaEtapa(dados) {
+  function coletarDados(dados) {
+    setDados({ ...dadosColetados, ...dados });
+    proximaEtapa();
+  }
+
+  function proximaEtapa() {
     setEtapaAtual(etapaAtual + 1);
   }
 
