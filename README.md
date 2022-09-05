@@ -47,3 +47,7 @@ Há alguns pré-requisitos para que possamos executar uma função dentro do JSX
 3. Caso esteja usando alguma variável que está no escopo do componente, a função deve estar dentro do próprio componente ou ser passada para a função via parâmetro.
 
 Aula 15: alteramos o comportamento do método/parâmetro "aoEnviar", fazendo uma injeção de dependências a fim de fazer com que o comportamento dele no caso do "onSubmit" seja de passar para o próximo formulário, ao executar a função "proximaEtapa". Ao final, o "aoEnviar" irá ter o comportamento que tinha anteriormente, enviando todos os dados, conforme as propriedades que ele recebe da função aoEnviarForm. Além disso, adicionamos o atributo "required" aos nossos campos de formulários.
+
+Aula 16: substituimos o switch por um array, para que nossas etapas sejam delimitadas. Por quê fizemos isso? A estrutura de um switch statement é tipicamente espalhada por diversos métodos. Isso é o que se chama de "code smell": quando uma nova condição for adicionada, teremos que encontrar todos os switch e modificá-los a fim de evitarmos comportamentos inesperados/bugs. A regra mais aplicada é quando nos deparamos com switch, devemos pensar em aplicar polimorfismo.
+
+dica: code smell é qualquer característica no código-fonte de um programa que possivelmente indica um problema mais profundo. Para saber mais: https://coodesh.com/blog/dicionario/o-que-e-code-smell/
