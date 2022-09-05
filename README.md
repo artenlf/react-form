@@ -53,3 +53,7 @@ Aula 16: substituimos o switch por um array, para que nossas etapas sejam delimi
 dica: code smell é qualquer característica no código-fonte de um programa que possivelmente indica um problema mais profundo. Para saber mais: https://coodesh.com/blog/dicionario/o-que-e-code-smell/
 
 Aula 17: adicionamos estados nos componentes individuais de cada formulário, para que possamos armazenar os dados de input do usuário. Na próxima aula, vamos integrar os dados de formulário, pois por enquanto o sistema está guardando os dados apenas do último formulário preenchido (isto é: DadosDeEntrega).
+
+Aula 18: Para podermos coletar os dados corretamente, precisamos levar em conta que a função sendo executada para coletar os dados é assincrona e gera efeitos colaterais. Para executar esses efeitos colaterais em componentes funcionais utilizamos o Effect Hook através da declaração useEffect(), no nosso caso, passando uma função anônima.
+
+Dica: sobre o effect hook ler mais em: https://pt-br.reactjs.org/docs/hooks-effect.html
