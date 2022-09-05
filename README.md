@@ -51,3 +51,5 @@ Aula 15: alteramos o comportamento do método/parâmetro "aoEnviar", fazendo uma
 Aula 16: substituimos o switch por um array, para que nossas etapas sejam delimitadas. Por quê fizemos isso? A estrutura de um switch statement é tipicamente espalhada por diversos métodos. Isso é o que se chama de "code smell": quando uma nova condição for adicionada, teremos que encontrar todos os switch e modificá-los a fim de evitarmos comportamentos inesperados/bugs. A regra mais aplicada é quando nos deparamos com switch, devemos pensar em aplicar polimorfismo.
 
 dica: code smell é qualquer característica no código-fonte de um programa que possivelmente indica um problema mais profundo. Para saber mais: https://coodesh.com/blog/dicionario/o-que-e-code-smell/
+
+Aula 17: adicionamos estados nos componentes individuais de cada formulário, para que possamos armazenar os dados de input do usuário. Na próxima aula, vamos integrar os dados de formulário, pois por enquanto o sistema está guardando os dados apenas do último formulário preenchido (isto é: DadosDeEntrega).
