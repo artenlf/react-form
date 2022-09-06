@@ -1,5 +1,11 @@
 # react-form
 
+### Como utilizar:
+
+#### Preencha o formulário seguindo as instruções, ao final do formulário abra o inspetor de elementos do seu navegador no menu console. Suas informações serão exibidas no console.
+
+### Anotações de aulas:
+
 curso de react function components:
 
 Aula 1: trabalhamos com o projeto inicial mudando a abordagem de class components para function components, uma abordagem mais moderna do react. Fizemos a estrutura básica do nosso formulário utilizando essa metodologia.
