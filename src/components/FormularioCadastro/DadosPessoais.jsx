@@ -1,9 +1,9 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import * as React from "react";
 import { Button, TextField, FormControlLabel, Switch } from "@mui/material";
-import { validarCPF } from "../../models/cadastro";
+import ValidacoesCadastro from "../../contexts/ValidacoesDeCadastro";
 
-function DadosPessoais({ aoEnviar, validacoes }) {
+function DadosPessoais({ aoEnviar }) {
   const [nome, setNome] = useState("");
   const [sobrenome, setSobrenome] = useState("");
   const [cpf, setCPF] = useState("");
@@ -11,6 +11,7 @@ function DadosPessoais({ aoEnviar, validacoes }) {
   const [newsletter, setNewsletter] = useState(true);
   const [erros, setErros] = useState({ cpf: { valido: true, texto: "" }, nome: { valido: true, texto: "" } });
 
+  const validacoes = useContext(ValidacoesCadastro);
   function validarCampos(event) {
     const { name, value } = event.target;
     const novoEstado = { ...erros };
