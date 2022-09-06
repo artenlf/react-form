@@ -59,3 +59,5 @@ Aula 18: Para podermos coletar os dados corretamente, precisamos levar em conta 
 Dica: sobre o effect hook ler mais em: https://pt-br.reactjs.org/docs/hooks-effect.html
 
 Aula 19: adicionando um fluxo visual para o usuário com o Stepper, Step e StepLabel e uma página de finalização.
+
+Aula 20: separando a função de validação de campos (CPF e senha) do App.js. É interessante fazer isso, pois além de facilitar a leitura e manutenção dos códigos, fica mais clara a regra de negócio.
