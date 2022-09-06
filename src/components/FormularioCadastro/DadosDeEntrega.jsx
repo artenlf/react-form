@@ -22,6 +22,7 @@ function DadosDeEntrega({ aoEnviar }) {
           setCep(event.target.value);
         }}
         id="cep"
+        name="cep"
         label="CEP"
         type="number"
         required
@@ -34,6 +35,7 @@ function DadosDeEntrega({ aoEnviar }) {
           setEndereco(event.target.value);
         }}
         id="endereco"
+        name="endereco"
         label="endereco"
         type="text"
         required
@@ -46,6 +48,7 @@ function DadosDeEntrega({ aoEnviar }) {
           setNumero(event.target.value);
         }}
         id="numero"
+        name="numero"
         label="Número"
         type="number"
         required
@@ -57,6 +60,7 @@ function DadosDeEntrega({ aoEnviar }) {
           setCidade(event.target.value);
         }}
         id="cidade"
+        name="cidade"
         label="Cidade"
         type="text"
         required
@@ -68,6 +72,7 @@ function DadosDeEntrega({ aoEnviar }) {
           setUf(event.target.value);
         }}
         id="uf"
+        name="uf"
         label="UF"
         type="text"
         required

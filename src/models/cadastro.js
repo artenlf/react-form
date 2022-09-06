@@ -7,8 +7,8 @@ function validarCPF(cpf) {
 }
 
 function validarSenha(senha) {
-  if (senha.length < 4 || senha.length > 25) {
-    return { valido: false, texto: "Senha deve ter de 4 a 24 dígitos" };
+  if (senha.length < 4 || senha.length > 72) {
+    return { valido: false, texto: "Deve ter entre 4 e 72 dígitos" };
   } else {
     return { valido: true, texto: "" };
   }
